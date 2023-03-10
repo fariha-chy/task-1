@@ -21,10 +21,13 @@ li { list-style: none;
 
 
     /* ---------- Blog Info Section ----------  */
-.alert {padding: 5px;
+.alert {border-left: 5px solid rgb(29, 81, 255);
+    border-radius: 0;
+    font-size: 14px;
+    padding: 3px;
     position: absolute;
     right: 0;}
-
+.alert i {margin:0 4px;}
     /* ---------- Package Info Section ---------- */
 
 .package-sec .row {position: relative;
