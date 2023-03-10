@@ -1,0 +1,126 @@
+    /* <!-- -------- Google Font Roboto -------- --> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+a { text-decoration: none;
+}
+li { list-style: none;
+}
+    
+    
+    /* ---------- Navbar Section ---------- */
+
+
+    /* ---------- Blog Info Section ----------  */
+.alert {padding: 5px;
+    position: absolute;
+    right: 0;}
+
+    /* ---------- Package Info Section ---------- */
+
+.package-sec .row {position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2em;
+    justify-items: center;
+    margin: 1em;
+}
+.package-sec .row .box {
+    position: relative;
+    border: 1px solid rgb(44, 153, 255);
+    border-radius: 10px;
+    padding: 2em 1em;
+    transition: transform 0.5s ease-in-out;
+  }
+/* .package-sec .row .box .hot {display: none;} */
+.package-sec .row .box:hover {
+
+    color: #ffffff;
+    border: none;
+    background-color: rgb(36, 155, 252);
+    border-radius: 10px;
+    transform: translateY(-20px);
+    box-shadow: rgba(0, 0, 0, 0.60) 0px 40px 30px -15px;
+  }
+
+
+    /* ---------- Client Blog Section ---------- */
+
+.client-sec .row {display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2em;
+    margin: 1em;
+}
+.row .client-info {padding-top: 1em;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.row .client-info img {
+    width: 5em;
+    border: 2px solid gray;
+    border-radius: 5em;
+    margin-bottom: 1em;
+}
+
+
+
+    /* ---------- Footer Section ---------- */
+
+footer {padding: 4em 0;
+    color: #ffffff;
+    background-color: black;}
+footer img {border: 1px solid #ffffff;
+    width: 7em;
+    margin-top: 5px;
+}
+.footer-sec {display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 1em;
+}
+.footer-sec .footer-box-1 {align-self: center;
+}
+.footer-sec .footer-box-2 {justify-self:end;
+
+}
+
+    /* ---------- END ----------    */
+    
+/* ---------- MOBILE ----------    */
+
+@media screen and (max-width: 580px) {
+    
+    .client-sec .row {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .package-sec .row {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .faq-sec .row {
+        flex-direction: column-reverse; 
+        flex-wrap: wrap;}
+    .footer-sec {justify-items: center;
+        grid-template-columns: repeat(1,1fr); 
+    }
+    .footer-sec .footer-box-2 { justify-self:center;
+        text-align: center;
+    }
+ }
+     /* ---------- TAB ----------    */
+
+@media screen and (min-width: 580px) and (max-width: 768px) {
+
+    .package-sec .row {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .client-sec .row {gap: 1em;}
+    .row .client-info {padding-top: .5em;}
+}
